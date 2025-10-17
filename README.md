@@ -56,13 +56,13 @@ python get_question_embedding_tensor.py
 ## Train and Evaluate
 
 
-Train IrtNet model and run downstream tasks (model routing and in-domain correctness prediction):
+Train IrtNet model and run downstream tasks (model routing and in-distribution correctness prediction):
 ```
 ./pipeline.sh
 ```
 If you just wanna test with trained model, add ```--eval_only``` to ```.\pipeline.sh```.
 
-To run out-of-domain benchmark prediction:
+To run out-of-distribution benchmark prediction:
 ```
 cd src
 python benchmark_prediction.py
